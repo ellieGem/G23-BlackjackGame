@@ -56,42 +56,42 @@ public class BlackJackEngine {
             if(players.get(i).getTotalFaceValue() < 17){
 
                 System.out.println(players.get(i).getName()+ " is hitting");
-                System.out.println("");
+                System.out.println();
                 hit(players.get(i));
                 System.out.println(players.get(i).getName()+" was dealt with " + players.get(i).getHands()+ " with a total face value of "+ players.get(i).getTotalFaceValue());
-                System.out.println("");
+                System.out.println();
 
                 if(players.get(i).getTotalFaceValue() < 17){
                     System.out.println(players.get(i).getName()+ " is hitting");
-                    System.out.println("");
+                    System.out.println();
                     hit(players.get(i));
                     System.out.println(players.get(i).getName()+" Your current hands " + players.get(i).getHands()+ " with a total face value of "+ players.get(i).getTotalFaceValue());
-                    System.out.println("");
+                    System.out.println();
                 }
 
                 else if(players.get(i).getTotalFaceValue() > 21){
                     System.out.println("Sorry "+ players.get(i).getName()+" you got bust and you're out of the game");
-                    System.out.println("");
+                    System.out.println();
                 }
 
                 else {
                     System.out.println("Sorry "+ players.get(i).getName()+" you can't hit, You stick");
-                    System.out.println("");
+                    System.out.println();
                     System.out.println(players.get(i).getName()+" Your current hands " + players.get(i).getHands()+ " with a total face value of "+ players.get(i).getTotalFaceValue());
-                    System.out.println("");
+                    System.out.println();
                 }
             }
 
             else if(players.get(i).getTotalFaceValue() > 21){
                 System.out.println("Sorry "+ players.get(i).getName()+" you got bust and you're out of the game");
-                System.out.println("");
+                System.out.println();
             }
 
             else {
                 System.out.println("Sorry "+ players.get(i).getName()+" you can't hit, You stick");
-                System.out.println("");
+                System.out.println();
                 System.out.println(players.get(i).getName()+" Your current hands" + players.get(i).getHands()+ " with a total face value of "+ players.get(i).getTotalFaceValue());
-                System.out.println("");
+                System.out.println();
             }
         }
     }

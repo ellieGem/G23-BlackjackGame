@@ -8,6 +8,9 @@ public class Deck {
 
     public Deck(){
         deck = new Card[totalNumberOfCard];
+//        for(Suits suit: Suits.values() ){
+//            fo
+//        }
         Suits[] suits = {
                 Suits.CLUBS,Suits.HEARTS,Suits.DIAMONDS,Suits.SPADES
         };
