@@ -11,7 +11,9 @@ public class BlackJackGame {
         BlackJackEngine engine = new BlackJackEngine();
 
         engine.start();
-
+        engine.shuffle();
+        engine.dealCards();
+        engine.hitCheck();
 //        Card card1 = new Card(Faces.Jack,Suits.DIAMONDS);
 //        System.out.println(card1.getCardValue());
 //        System.out.println(deckCards.getLength());

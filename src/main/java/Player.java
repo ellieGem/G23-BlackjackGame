@@ -16,10 +16,21 @@ public class Player {
 
     public void addCard(Card card){
         handOfCards.add(card);
+//        System.out.println(handOfCards);
         this.totalFaceValue += card.getCardValue();
+//        System.out.println(totalFaceValue);
     }
 
-//    public int getTotalFaceValue(){
-//
-//    }
+    public  List<Card> getHands(){
+        return handOfCards;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getTotalFaceValue(){
+        return this.totalFaceValue;
+    }
+
 }
